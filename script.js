@@ -28,6 +28,8 @@ let persone = { //how object is created
     isMaried: true
 };
 
+// Важно! В последних версиях браузеров поведение работы со свойствами объектов поменялось. 
+// Теперь синтаксис через точку может не работать.
 console.log(persone.name);
 console.log(persone["age"]);
 
@@ -45,6 +47,8 @@ console.log(arr[2]);
 let answer = prompt("Есть ли вам 18?", "Да"); //окно с вводом информации
 console.log(answer);
 console.log(typeof(answer)); //от пользователя получаем тип string; typeof - проверка на тип
+//если нажать отмена - от пользователя получим тип данных null (если null проверить на typeof - будет object)
+//если ок и ничего не ввести - будет пусто
 */
 
 // LESSON 7
